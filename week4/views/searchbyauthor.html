@@ -1,0 +1,50 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table,th,td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1> WELCOME TO YOUR FILTERED LIST</h1>
+    </br>
+    <h3>The books you requested are:
+        <table>
+            <tr>
+                 <th>TITLE</th>
+                <th>AUTHOR</th>
+                <th>TOPIC</th>
+                <th>COST</th>
+
+        <script> let bookAuthor = request.params.name; </script>
+            </tr>
+            <% for ( let i =0; i< db.length;i++){ %>
+                <% if (bookAuthor === db[i].author){  %>
+
+                }
+                <tr>
+                    <td>
+                        <%= db[i].Topic %>
+                    </td>
+                    <td>
+                        <%= db[i].Author %>
+                    </td>
+                    <td>
+                        <%= db[i].Topic %>
+                    </td>
+                    <td>
+                        <%= db[i].Cost %>
+                    </td>
+                </tr>
+                <% }%>
+     </table>
+
+     <a href = '/'> HOMEPAGE </a> <br>
+     <a href = '/newbook'> ADD A NEW BOOK </a> <br>
+     <a href = '/newbook'> ORIGINAL LIST</a> <br>
+
+    </h3>
+</body>
+</html>

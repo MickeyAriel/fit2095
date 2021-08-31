@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styles.css">
+<body>
+
+<h1> ENTER THE TITLE AND THE UPDATED DATA</h1>
+
+<form action = '/updatebook' method = "POST">
+    title: <input type = "text" name = "titleold"/> <br><br>
+    new author: <input type = "text" name = "authornew"/> <br><br>
+    new topic: <input type = "text" name = "topicnew"/> <br><br>
+    new date: <input type = "date" name = "datenew"/> <br><br>
+    new summary: <input type = "text" name = "summarynew"/> <br><br>
+    <br>
+
+    <button onclick="myFunction()">SUBMIT</button>
+</form> 
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        alert("The form was submitted");
+    }
+    </script>
+
+<h2>WHERE TO GO?</h2> 
+<a href = '/'> HOMEPAGE </a> <br>
+<a href = '/addbook'> ADD ANOTHER NEW BOOK </a> <br>
+<a href = '/listbook'> LIST OF BOOKS</a> <br>
+<a href = '/deletebook'> DELETE A BOOK BY TOPIC</a> <br>
+<a href = '/deletebookdate'> DELETE A BOOK BY DATE</a> <br>
+<a href = '/updatebook'> UPDATE A BOOK</a> <br>
+
+</body>
+</html>

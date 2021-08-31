@@ -1,0 +1,54 @@
+<html>
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1> Welcome, Here is the list of our books
+    </h1>
+    </br>
+    <h3>The available books are:
+        <table>
+            <tr>
+                <th>TITLE</th>
+                <th>AUTHOR</th>
+                <th>TOPIC</th>
+                <th>DATE</th>
+                <th>SUMMARY</th>
+            </tr>
+            <% for ( let i =0; i< labw5Collection.length;i++){ %>
+                <tr>
+                    <td>
+                        <%= labw5Collection[i].title %>
+                    </td>
+                    <td>
+                        <%= labw5Collection[i].author %>
+                    </td>
+                    <td>
+                        <%= labw5Collection[i].topic %>
+                    </td>
+                    <td>
+                        <%= labw5Collection[i].date %>
+                    </td>
+                    <td>
+                        <%= labw5Collection[i].summary %>
+                    </td>
+                </tr>
+                <% }%>
+     </table>
+    </h3>
+
+    <h2>WHERE TO GO?</h2> 
+<a href = '/'> HOMEPAGE </a> <br>
+<a href = '/addbook'> ADD ANOTHER NEW BOOK </a> <br>
+<a href = '/listbook'> LIST OF BOOKS</a> <br>
+<a href = '/deletebook'> DELETE A BOOK BY TOPIC</a> <br>
+<a href = '/deletebookdate'> DELETE A BOOK BY DATE</a> <br>
+<a href = '/updatebook'> UPDATE A BOOK</a> <br>
+
+</body>
+</html>

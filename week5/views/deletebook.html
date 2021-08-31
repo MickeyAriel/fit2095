@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styles.css">
+<body>
+    <h1> DELETE RECORDS OF BOOKS BY TOPIC</h1>
+    <h3> enter the topic and we'll delete them :) </h3>
+
+<form action = '/deletebook' method = "POST">
+    topic to delete : <input type = "text" name = "topicdelete"/> <br><br>
+
+    <button onclick="myFunction()">SUBMIT</button>
+</form> 
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        alert("we will process your needs!");
+    }
+    </script>
+
+<h2>WHERE TO GO?</h2> 
+<a href = '/'> HOMEPAGE </a> <br>
+<a href = '/addbook'> ADD ANOTHER NEW BOOK </a> <br>
+<a href = '/listbook'> LIST OF BOOKS</a> <br>
+<a href = '/deletebook'> DELETE ANOTHER BOOK BY TOPIC</a> <br>
+<a href = '/deletebookdate'> DELETE A BOOK BY DATE</a> <br>
+<a href = '/updatebook'> UPDATE A BOOK</a> <br>
+
+</body>
+</html>

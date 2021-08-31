@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LIST OF DOCTORS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+    /* Style the body */
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+    
+    /* Header/Logo Title */
+    .header {
+      padding: 20px;
+      text-align: center;
+      background: #d4a6c3;
+      color: rgb(17, 16, 16);
+      font-size: 25px;
+    }
+    
+    /* Page Content */
+    .content {padding:20px;}
+    </style>
+
+<body>
+
+<div class="container">
+    <!-- Add a logo for the home page -->
+    <img src="logo.jpg" width="100" height="100" class = "center"> 
+  <h1> WELCOME TO OUR CLINIC MANAGING SYSTEM</h1>
+  <a href= '/'>  <button type="button" class="btn">HOME</button> </a>
+  <a href= '/adddoctor'>  <button type="button" class="btn">ADD DOCTOR</button> </a>
+  <a href= '/listdoctor'>  <button type="button" class="btn">LIST DOCTOR</button> </a>
+  <a href= '/addpatient'>  <button type="button" class="btn">ADD PATIENT</button> </a>
+  <a href= '/listpatients'>  <button type="button" class="btn">LIST PATIENTS</button> </a>
+  <a href= '/deletepatient'>  <button type="button" class="btn">DELETE A PATIENT</button> </a>
+  <a href= '/updatedoctor'>  <button type="button" class="btn">UPDATE A DOCTOR</button> </a>
+</div>
+<br><br><br>
+<h1> Welcome, Here is the list of our doctors</h1>
+</br>
+<h3>The available doctors are: </h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>FIRST NAME</th>
+            <th>LAST NAME </th>
+            <th>DOB</th>
+            <th>STATE</th>
+            <th>SUBURB</th>
+            <th>STREET</th>
+            <th>UNIT</th>
+            <th>NO. OF PATIENTS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for ( let i =0; i< doctorsCollection.length;i++){ %>
+            <tr>
+                <td>
+                    <%= doctorsCollection[i]._id %>
+                </td>
+                <td>
+                    <%= doctorsCollection[i].firstName %>
+                </td>
+                <td>
+                    <%= doctorsCollection[i].lastName %>
+                </td>
+                <td>
+                    <%= doctorsCollection[i].dob %>
+                </td>
+                <td>
+                    <%= doctorsCollection[i].state %>
+                </td>
+                <td>
+                    <%= doctorsCollection[i].suburb %>
+                </td>
+                <td>
+                    <%= doctorsCollection[i].street %>
+                </td>
+                <td>
+                    <%= doctorsCollection[i].unit %>
+                </td>
+                <td>
+                    <%= doctorsCollection[i].numPatients %>
+                </td>
+            </tr>
+            <% }%>
+    </tbody>
+ </table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styles.css">
+<body>
+    <h1> DELETE RECORDS OF BOOKS BY DATE</h1>
+    <h3> enter the date and we'll delete records older than them :) </h3>
+
+<form action = '/deletebookdate' method = "POST">
+    date older than ____ to delete : <input type = "date" name = "datedelete"/> <br><br>
+
+    <button onclick="myFunction()">SUBMIT</button>
+</form> 
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        alert("we will process your needs!");
+    }
+    </script>
+
+<h2>WHERE TO GO?</h2> 
+<a href = '/'> HOMEPAGE </a> <br>
+<a href = '/addbook'> ADD ANOTHER NEW BOOK </a> <br>
+<a href = '/listbook'> LIST OF BOOKS</a> <br>
+<a href = '/deletebook'> DELETE BOOK BY TOPIC</a> <br>
+<a href = '/deletebookdate'> DELETE ANOTHER BOOK BY DATE</a> <br>
+<a href = '/updatebook'> UPDATE A BOOK</a> <br>
+
+</body>
+</html>

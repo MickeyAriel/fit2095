@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1> Here are the list of books </h1>
+        <br>
+        <ul>
+            <% for ( let i = 0; i < labw5collection.length; i++ ){  %>
+                <li>
+                    <%= labw5collection.title %> |
+                    <%= labw5collection[i].author %> |
+                    <%= labw5collection[i].topic %> | 
+                    <%= labw5collection[i].date %> |
+                    <%= labw5collection[i].summary %> | 
+                </li>
+
+            <% } %>
+        </ul>
+    </body>
+</html>
+

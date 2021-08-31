@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DELETE PATIENT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    /* Style the body */
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+    
+    /* Header/Logo Title */
+    .header {
+      padding: 20px;
+      text-align: center;
+      background: #d4a6c3;
+      color: rgb(17, 16, 16);
+      font-size: 25px;
+    }
+    
+    /* Page Content */
+    .content {padding:20px;}
+    </style>
+
+<body>
+
+<div class="container">
+    <!-- Add a logo for the home page -->
+    <img src="logo.jpg" width="100" height="100" class = "center"> 
+  <h1> WELCOME TO OUR CLINIC MANAGING SYSTEM</h1>
+  <a href= '/'>  <button type="button" class="btn">HOME</button> </a>
+  <a href= '/adddoctor'>  <button type="button" class="btn">ADD DOCTOR</button> </a>
+  <a href= '/listdoctor'>  <button type="button" class="btn">LIST DOCTOR</button> </a>
+  <a href= '/addpatient'>  <button type="button" class="btn">ADD PATIENT</button> </a>
+  <a href= '/listpatients'>  <button type="button" class="btn">LIST PATIENTS</button> </a>
+  <a href= '/deletepatient'>  <button type="button" class="btn">DELETE A PATIENT</button> </a>
+  <a href= '/updatedoctor'>  <button type="button" class="btn">UPDATE A DOCTOR</button> </a>
+    <br><br><br>
+
+  <h1> DELETE RECORDS OF PATIENTS BY FULL NAME</h1>
+  <h3> enter the full name of patient and we'll delete them :) </h3>
+
+  <form action = '/deletepatient' method = "POST">
+    patient's fullname to delete : <input type = "text" name = "deleteFullName"/> <br><br>
+
+    <button onclick="myFunction()">SUBMIT</button>
+</form> 
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        alert("we will process your needs!");
+    }
+    </script>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styles.css">
+<body>
+
+<form action = '/newbook' method = "POST">
+    title: <input type = "text" name = "title"/> <br><br>
+    author: <input type = "text" name = "author"/> <br><br>
+    topic: <input type = "text" name = "topic"/> <br><br>
+    cost: <input type = "number" name = "cost"/> <br><br>
+    <br>
+
+    <script>
+            db.push({
+            Title: req.body.title,
+            Author: req.body.author,
+            Topic: req.body.topic,
+            Cost: req.body.cost
+        });
+    </script>
+
+    <button onclick="myFunction()">SUBMIT</button>
+</form> 
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        alert("The form was submitted");
+    }
+    </script>
+
+<h2>WHERE TO GO?</h2>
+<a href = '/'> HOMEPAGE </a> <br>
+<a href = '/listbook'> LIST THE BOOKS </a> <br>
+<a href = '/searchybyauthor'> SEE FILTERED LIST </a> <br>
+
+</body>
+</html>

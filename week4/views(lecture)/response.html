@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <h2> welcome to FIT2095 your age is  <%=anAge%> </h2>
+
+        <table>
+            <tr>
+                <td>#</td>
+                <td>mark</td>
+            </tr>
+            <% for(let i = 0; i<marks.length; i++){ %>
+                <tr>
+                    <td> <%=(i+1)%> </td> 
+                    <td><%=msrks[i] %></td>
+                </tr>
+            <% } %>
+
+        </table>
+
+    </body>
+</html>
