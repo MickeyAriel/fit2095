@@ -160,7 +160,7 @@ app.get('/updatedoctor', function(req,res){
 });
 
 app.post('/updatedoctor', function(req,res){
-    const Doctor = mongoose.model('Doctor');
+    const Doctor  = mongoose.model('Doctor');
     let doctor = req.body;
     let filter = {_id: doctor.doctorUpdate};
     let theUpdate = {
